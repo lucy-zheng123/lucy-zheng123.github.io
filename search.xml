@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>整理对this请求的理解</title>
+      <link href="/2020/07/18/zheng-li-dui-https-xie-yi-de-li-jie/"/>
+      <url>/2020/07/18/zheng-li-dui-https-xie-yi-de-li-jie/</url>
+      
+        <content type="html"><![CDATA[<h1 id="this关键字指向问题"><a href="#this关键字指向问题" class="headerlink" title="this关键字指向问题"></a>this关键字指向问题</h1><h2 id="this在各个场景下表示什么值"><a href="#this在各个场景下表示什么值" class="headerlink" title="this在各个场景下表示什么值"></a>this在各个场景下表示什么值</h2><ul><li>1.首先是在全局环境中的this.在全局环境中。this指向window对象;如：<br><code>alert(this)  //控制台输出（object.window）</code><br><code>alert(this === window);   // true</code>  </li><li>2.事件处理中的this 在事件处理函数中，this指向当前节点，就是说绑定事件的那个节点;  </li><li>3  构造函数中的this 构造函数中，this指向被创建的对象<br><img src="https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn@1.1/images/lading.gif" data-original="https://i.loli.net/2020/07/18/nkVZyKPMCOYRzgm.png" alt=""><br>可以清楚发现调用者是谁this就指向谁，如果是自己调用则是参考1指向全局变量 <h2 id="改变指向问题"><a href="#改变指向问题" class="headerlink" title="改变指向问题"></a>改变指向问题</h2></li><li>了解了this的基本指向我们再来看看函数对象的call()、apply() 方法(这些方法原理上是改变了this的指向对象)<br>函数作为对象提供了call()，apply() 方法，他们也可以用来调用函数，这两个方法都接受一个对象作为参数，用来指定本次调用时函数中this的指向；</li></ul><p>call()方法<br>call方法使用的语法规则<br>函数名称.call(obj,arg1,arg2…argN);<br>参数说明:<br>obj:函数内this要指向的对象（像上面的student我可以改成其他对象））<br>arg1,arg2…argN :参数列表，参数与参数之间使用一个逗号隔开<br><img src="https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn@1.1/images/lading.gif" data-original="https://i.loli.net/2020/07/18/wzPvl6rOsTDXnbH.png" alt=""><br>apply()方法<br>函数名称.apply(obj,[arg1,arg2…,argN])<br>参数说明:<br>obj :this要指向的对象<br>[arg1,arg2…argN] : 参数列表，要求格式为数组<br><img src="https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn@1.1/images/lading.gif" data-original="https://i.loli.net/2020/07/18/OHxXFGg8ot7sTl4.png" alt="">  </p><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>1.两者所实现的功能都是改变this指向问题<br>2. 但是区别是 =&gt; call改变的是对象 =&gt; apply改变的是数组;  </p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 对this理解 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>快速搭建博客</title>
       <link href="/2020/07/17/kuai-su-da-jian-bo-ke/"/>
       <url>/2020/07/17/kuai-su-da-jian-bo-ke/</url>
