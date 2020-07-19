@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="整理对this请求的理解, 木心">
+    <meta name="keywords" content="总结对数组的理解, 木心">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>整理对this请求的理解 | 木心</title>
+    <title>总结对数组的理解 | 木心</title>
     <link rel="icon" type="image/jpeg" href="https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn@1.1/medias/avatar.jpg">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -583,12 +583,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn//medias/featureimages/8.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn//medias/featureimages/2.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">整理对this请求的理解</h1>
+                    <h1 class="description center-align post-title">总结对数组的理解</h1>
                 </div>
             </div>
         </div>
@@ -709,8 +709,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E5%AF%B9this%E7%90%86%E8%A7%A3/">
-                                <span class="chip bg-color">对this理解</span>
+                            <a href="/tags/%E6%95%B0%E7%BB%84/">
+                                <span class="chip bg-color">数组</span>
                             </a>
                         
                     </div>
@@ -725,7 +725,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-07-18
+                    2020-07-19
                 </div>
                 
 
@@ -734,14 +734,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    400
+                    1.2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    4 分
                 </div>
                 
 
@@ -756,14 +756,129 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="this关键字指向问题"><a href="#this关键字指向问题" class="headerlink" title="this关键字指向问题"></a>this关键字指向问题</h1><h2 id="this在各个场景下表示什么值"><a href="#this在各个场景下表示什么值" class="headerlink" title="this在各个场景下表示什么值"></a>this在各个场景下表示什么值</h2><ul>
-<li>1.首先是在全局环境中的this.在全局环境中。this指向window对象;如：<br><code>alert(this)  //控制台输出（object.window）</code><br><code>alert(this === window);   // true</code>  </li>
-<li>2.事件处理中的this 在事件处理函数中，this指向当前节点，就是说绑定事件的那个节点;  </li>
-<li>3  构造函数中的this 构造函数中，this指向被创建的对象<br><img src="https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn@1.1/images/lading.gif" data-original="https://i.loli.net/2020/07/18/nkVZyKPMCOYRzgm.png" alt=""><br>可以清楚发现调用者是谁this就指向谁，如果是自己调用则是参考1指向全局变量 <h2 id="改变指向问题"><a href="#改变指向问题" class="headerlink" title="改变指向问题"></a>改变指向问题</h2></li>
-<li>了解了this的基本指向我们再来看看函数对象的call()、apply() 方法(这些方法原理上是改变了this的指向对象)<br>函数作为对象提供了call()，apply() 方法，他们也可以用来调用函数，这两个方法都接受一个对象作为参数，用来指定本次调用时函数中this的指向；</li>
+                <h1 id="JS基础篇1：数据类型"><a href="#JS基础篇1：数据类型" class="headerlink" title="JS基础篇1：数据类型"></a>JS基础篇1：数据类型</h1><h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><p>在es5之前数组的类型有6种分别是 :<strong>Number,String,null,underfined,Boolean</strong>；以及复杂类型：Object；</p>
+<p>ES6 中新增了一种 Symbol 。这种类型的对象永不相等，即始创建的时候传入相同的值，可以解决属性名冲突的问题，做为标记。</p>
+<p>谷歌67版本中还出现了一种 bigInt。是指安全存储、操作大整数。</p>
+<h3 id="JS数据类型：JS-的数据类型有几种？"><a href="#JS数据类型：JS-的数据类型有几种？" class="headerlink" title="JS数据类型：JS 的数据类型有几种？"></a>JS数据类型：JS 的数据类型有几种？</h3><blockquote>
+<p> 8种。Number、String、Boolean、Null、undefined、object、symbol、bigInt。</p>
+</blockquote>
+<h3 id="JS数据类型：Object-中包含了哪几种类型？"><a href="#JS数据类型：Object-中包含了哪几种类型？" class="headerlink" title="JS数据类型：Object 中包含了哪几种类型？"></a>JS数据类型：Object 中包含了哪几种类型？</h3><blockquote>
+<p>  其中包含了Data、function、Array等。这三种是常规用的。</p>
+</blockquote>
+<h3 id="JS数据类型：JS的基本类型和引用类型有哪些呢？"><a href="#JS数据类型：JS的基本类型和引用类型有哪些呢？" class="headerlink" title="JS数据类型：JS的基本类型和引用类型有哪些呢？"></a>JS数据类型：JS的基本类型和引用类型有哪些呢？</h3><blockquote>
+<p>基本类型（单类型）：除Object。 String、Number、boolean、null、undefined。</p>
+<p>引用类型：object。里面包含的 function、Array、Date。</p>
+<p>基本类型的实例：</p>
+<p>引用类型的实例：</p>
+</blockquote>
+<h3 id="JS数据类型：JS-中-typeof-输出分别是什么？"><a href="#JS数据类型：JS-中-typeof-输出分别是什么？" class="headerlink" title="JS数据类型：JS 中 typeof 输出分别是什么？"></a>JS数据类型：JS 中 typeof 输出分别是什么？</h3><blockquote>
+<p>{ } 、[ ] 输出 object。</p>
+<p>console.log( ) 输出 function。</p>
+</blockquote>
+<p>注意一点是：NaN是Number中的一中，非Number</p>
+<table>
+<thead>
+<tr>
+<th>String</th>
+<th>String</th>
+<th>字符串</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Number</td>
+<td>Number</td>
+<td>数据类型</td>
+</tr>
+<tr>
+<td>Boolean</td>
+<td>Boolean</td>
+<td>布尔类型</td>
+</tr>
+<tr>
+<td>Underfined</td>
+<td>Underfined</td>
+<td>没有初始化定义值</td>
+</tr>
+<tr>
+<td>Null</td>
+<td>Object</td>
+<td>不存在的对象</td>
+</tr>
+<tr>
+<td>NaN</td>
+<td>Number</td>
+<td>Number中的特殊值</td>
+</tr>
+<tr>
+<td>Object</td>
+<td>Function</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>有一点要注意的是NaN == NaN  //false  这是hs规定的空值不能相等</p>
+<h3 id="JS数据类型：如何判断数据类型"><a href="#JS数据类型：如何判断数据类型" class="headerlink" title="JS数据类型：如何判断数据类型"></a>JS数据类型：如何判断数据类型</h3><blockquote>
+<p>1､typeof 操作符</p>
+<p>2､toString ( )   </p>
+<p> 作用：其他类型转成 string 的方法</p>
+<p>  支持：number、boolean、string、object </p>
+<p>  不支持：null 、undefined</p>
+</blockquote>
+<h2 id="检测数组类型的方法"><a href="#检测数组类型的方法" class="headerlink" title="检测数组类型的方法"></a>检测数组类型的方法</h2><blockquote>
+<ul>
+<li><p>nstanceof  操作符</p>
+</li>
+<li><p>对象的 constructor 属性  </p>
+</li>
+<li><p>Array.isArray( ) 检验值是否为数组</p>
+</li>
 </ul>
-<p>call()方法<br>call方法使用的语法规则<br>函数名称.call(obj,arg1,arg2…argN);<br>参数说明:<br>obj:函数内this要指向的对象（像上面的student我可以改成其他对象））<br>arg1,arg2…argN :参数列表，参数与参数之间使用一个逗号隔开<br><img src="https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn@1.1/images/lading.gif" data-original="https://i.loli.net/2020/07/18/wzPvl6rOsTDXnbH.png" alt=""><br>apply()方法<br>函数名称.apply(obj,[arg1,arg2…,argN])<br>参数说明:<br>obj :this要指向的对象<br>[arg1,arg2…argN] : 参数列表，要求格式为数组<br><img src="https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn@1.1/images/lading.gif" data-original="https://i.loli.net/2020/07/18/OHxXFGg8ot7sTl4.png" alt="">  </p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>1.两者所实现的功能都是改变this指向问题<br>2. 但是区别是 =&gt; call改变的是对象 =&gt; apply改变的是数组;  </p>
+</blockquote>
+<h3 id="JS数据类型：null-和-undefined-有什么区别？"><a href="#JS数据类型：null-和-undefined-有什么区别？" class="headerlink" title="JS数据类型：null 和 undefined 有什么区别？"></a>JS数据类型：null 和 undefined 有什么区别？</h3><blockquote>
+<p>Null 只有一个值，是 null。不存在的对象。</p>
+<p>Undefined 只有一个值，是undefined。没有初始化。undefined 是从 null 中派生出来的。</p>
+<p>简单理解就是：undefined 是没有定义的，null 是定义了但是为空。</p>
+</blockquote>
+<h3 id="数据类型：null-不存在的原因是什么？如何解决？"><a href="#数据类型：null-不存在的原因是什么？如何解决？" class="headerlink" title="数据类型：null 不存在的原因是什么？如何解决？"></a>数据类型：null 不存在的原因是什么？如何解决？</h3><p>   不存在的原因是：</p>
+<blockquote>
+<p>​            1､方法不存在</p>
+<p>​            2､对象不存在</p>
+<p>​            3､字符串变量不存在</p>
+<p>​            4､接口类型对象没初始化 </p>
+<p>解决方法：</p>
+<p>​            做判断处理的时候，放在设定值的最前面</p>
+</blockquote>
+<h3 id="JS数据类型：-和-有什么区别，什么场景下使用？"><a href="#JS数据类型：-和-有什么区别，什么场景下使用？" class="headerlink" title="JS数据类型：== 和 === 有什么区别，什么场景下使用？"></a>JS数据类型：== 和 === 有什么区别，什么场景下使用？</h3><blockquote>
+<p>== 表示相同。</p>
+<p>​        比较的是物理地址，相当于比较两个对象的 hashCode ，肯定不相等的。</p>
+<p>​        类型不同，值也可能相等。</p>
+<p>=== 表示严格相同。</p>
+<p>​        例：同为 null／undefined ，相等。</p>
+<p>简单理解就是 == 就是先比较数据类型是否一样。=== 类型不同直接就是 false。</p>
+</blockquote>
+<p>JS数据类型：对象可以比较地？</p>
+<blockquote>
+<p>对象是可以比较，遍历比较key 和 value就行， Object.is(value1, value2)。</p>
+</blockquote>
+<h2 id="JS数据类型：总结"><a href="#JS数据类型：总结" class="headerlink" title="JS数据类型：总结"></a>JS数据类型：总结</h2><p><strong><em>1､Undefined 类型</em></strong></p>
+<p>​    <strong><em>只有一个值。在使用var 声明变量但未对其加初始化时，这个变量就是undefined。</em></strong></p>
+<p> <strong><em>2､Null 类型</em></strong></p>
+<p>​    <strong><em>只有一个值。null是表示一个空对象指针，这也是typeof操作符检测 null 值时会返回 object 的原因。</em></strong></p>
+<p><strong><em>3､Boolean 类型</em></strong></p>
+<p>​    <strong><em>使用最多的一个类型，有两个字面值，分别是true、false。true不一定等于1,false不一定等于0。</em></strong></p>
+<p>​    <strong><em>boolean类型的字面值是区分大小写的。True和False是标识符</em></strong></p>
+<p>  <strong><em>4､Number 类型</em></strong></p>
+<p>​     <strong><em>数字类型，表示数据的整数和浮点数。某些语言中也称为“双精度值”。</em></strong></p>
+<p><strong><em>5､String 类型</em></strong></p>
+<p>​     <strong><em>字符串可以有单引号、双引号表示。字符串是不可变的，一旦创建，值就不能改变</em></strong></p>
+<p>​     <strong><em>要改变某个变量保存的字符串，首先要销毁原来的字符串，然后于用另一个包含的字符串填充该变量。</em></strong></p>
+<p> <strong><em>6､Object 类型</em></strong></p>
+<p>​     <strong><em>ECMAjavascript中的对象其实就是一组数据和功能的集合。对象可以通过执行new操作符后跟要创建的对象类型的名称来创建。创建object类型的实例并为其添加属性（或）方法，就可以自定义创建对象。</em></strong></p>
+<p> <strong><em>7､ Symbol 类型</em></strong></p>
+<p>​     <strong><em>Symbol 类型的对象永远不相等，即便创建的时候传入相同的值。因此，可以用解决属性名冲突的问题（适用于多少编码），做为标记。</em></strong></p>
+<p>​     <strong><em>这是 es6 新增的数据类型。</em></strong></p>
+<p> <strong><em>8､BigInt 类型</em></strong></p>
+<p>​     <strong><em>Javascript 中的任意精度整数，可以安全存储和操作大整数。即始超出 Number 能够表示的安全整数范围。是 chrome 67中的新功能。*</em></strong></p>
+<p>转载CSDN博主「帅帅哥的兜兜」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。<a href="https://blog.csdn.net/u013592575/article/details/95087953" target="_blank" rel="noopener">原文链接：</a></p>
 
             </div>
             <hr/>
@@ -789,7 +904,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://lucy-zheng123.github.io/2020/07/18/zheng-li-dui-https-xie-yi-de-li-jie/">https://lucy-zheng123.github.io/2020/07/18/zheng-li-dui-https-xie-yi-de-li-jie/</a>
+                    <a href="https://lucy-zheng123.github.io/2020/07/19/zong-jie-dui-shu-zu-de-li-jie/">https://lucy-zheng123.github.io/2020/07/19/zong-jie-dui-shu-zu-de-li-jie/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -827,8 +942,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E5%AF%B9this%E7%90%86%E8%A7%A3/">
-                                    <span class="chip bg-color">对this理解</span>
+                                <a href="/tags/%E6%95%B0%E7%BB%84/">
+                                    <span class="chip bg-color">数组</span>
                                 </a>
                             
                         </div>
@@ -1259,9 +1374,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2020/07/19/zong-jie-dui-shu-zu-de-li-jie/">
                     <div class="card-image">
@@ -1280,9 +1396,9 @@ ES6 中新增了一种 Symbol 。这种类型的对象永不相等，即始
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-07-19
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-19
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -1291,6 +1407,7 @@ ES6 中新增了一种 Symbol 。这种类型的对象永不相等，即始
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -1309,25 +1426,25 @@ ES6 中新增了一种 Symbol 。这种类型的对象永不相等，即始
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/07/17/kuai-su-da-jian-bo-ke/">
+                <a href="/2020/07/18/zheng-li-dui-https-xie-yi-de-li-jie/">
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn@1.1/images/lading.gif" data-original="https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn//medias/featureimages/4.jpg" class="responsive-img" alt="快速搭建博客">
+                        <img src="https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn@1.1/images/lading.gif" data-original="https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn//medias/featureimages/8.jpg" class="responsive-img" alt="整理对this请求的理解">
                         
-                        <span class="card-title">快速搭建博客</span>
+                        <span class="card-title">整理对this请求的理解</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            博客搭建hexo基本搭建
-搭建博客第一步需要安装相关的软件和搭配环境。这里就可以跟着脚本搭建脚本教程到了这里你发现最基本的hexo已经搭建好在搭建好的hexoblog下执行hexo s 可以在本地查看 hex d 在github上可以查看，
+                            this关键字指向问题this在各个场景下表示什么值
+1.首先是在全局环境中的this.在全局环境中。this指向window对象;如：alert(this)  //控制台输出（object.window）alert(this === wi
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-17
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-18
                             </span>
                         <span class="publish-author">
                             
@@ -1340,8 +1457,8 @@ ES6 中新增了一种 Symbol 。这种类型的对象永不相等，即始
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%80%BB%E7%BB%93%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">
-                        <span class="chip bg-color">总结搭建博客</span>
+                    <a href="/tags/%E5%AF%B9this%E7%90%86%E8%A7%A3/">
+                        <span class="chip bg-color">对this理解</span>
                     </a>
                     
                 </div>
