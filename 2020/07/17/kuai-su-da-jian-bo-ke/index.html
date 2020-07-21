@@ -718,6 +718,15 @@
                 </div>
                 <div class="col s5 right-align">
                     
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E5%8D%9A%E5%AE%A2/" class="post-category">
+                                博客
+                            </a>
+                        
+                    </div>
+                    
                 </div>
             </div>
 
@@ -734,14 +743,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.6k
+                    1.8k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    5 分
+                    6 分
                 </div>
                 
 
@@ -776,13 +785,23 @@
 </ul>
 <hr>
 <h1 id="cdn加速问题"><a href="#cdn加速问题" class="headerlink" title="cdn加速问题"></a>cdn加速问题</h1><h2 id="github-jsDelivr搭建免费cdn"><a href="#github-jsDelivr搭建免费cdn" class="headerlink" title="github+jsDelivr搭建免费cdn"></a>github+jsDelivr搭建免费cdn</h2><ul>
-<li>操作到这一步的时候页面基本成型，在本地跑起来也比较快，不过在线上网站跑的时候速度异常慢，原因是本地图片加载过于缓慢，再加上github服务器在国外，对于国内访问不良好所导致的解决方法：<br>推荐这篇文章<a href="https://cungudafa.gitee.io/post/2a9.html" target="_blank" rel="noopener">搭建自己免费的cdn</a>,非常详细跟着操作就行，做完以后就会有自己的cdn,试着访问速度大大提升。图片加载速度还可以<br><code>git add . &amp;&amp; git commit -m &quot;第一次提交&quot; &amp;&amp; git push</code><br><img src="https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn@1.1/images/lading.gif" data-original="https://i.loli.net/2020/07/18/XvkYwNFZU6Wj1PT.png" alt=""><br>在这里说下怎么把本地图片变成url =&gt;点击这个<a href="https://sm.ms/" target="_blank" rel="noopener">sm</a>轻量免费的图床<br>让图片上传。  </li>
-<li>由于第一次接触cdn我就把它简单理解成把图片挂载在github+lsDelivr这个服务器上，然后把本地的图片路径改成你所对应的<code>https://cdn.jsdelivr.net/gh/</code>后面跟着就是你的github名字加图片所对应的地址  </li>
-<li>还有就是图片懒加载的地址是放在 <code>hexo-theme-matery\source\images</code>这个目录下的;   </li>
-<li>如果是首先启动界面动画的设置的话推荐这篇<a href="https://yafine-blog.cn/posts/7400.html" target="_blank" rel="noopener">loading-pages</a>只要引入js文件就可以了;</li>
-<li>其他一些细节要注意看上面相关文章的点，里面都有详细介绍。 </li>
-<li>再补充一下如果要修改背景音乐的话可以在主配置文件中找到音乐然后里面有提示可以根据提示修改<br><img src="https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn@1.1/images/lading.gif" data-original="https://i.loli.net/2020/07/19/b5tPsXiy4grMJKU.png" alt=""><br>这里插入音乐链接的话我使用的是网易外部链接<a href="https://music.163.com/" target="_blank" rel="noopener">网易pc端</a>里面找到自己喜欢的歌曲然后点生成外链播放器在里面可以看到他会生成一段代码可以把那个链接的id数拷贝过来替代原来的id就可以了;但是如果看到的是由于版权保护，无法生成外链。那就看这篇文章<a href="https://www.cnblogs.com/cstdio1/p/11617357.html" target="_blank" rel="noopener">解决版权保护问题</a>，然后就可以添加啦  <h2 id="绑定域名"><a href="#绑定域名" class="headerlink" title="绑定域名"></a>绑定域名</h2></li>
-<li>再补充下怎么通过自己的域名打开至于注册域名的话可以去阿里云搜索自己的喜欢的域名注册到实名就不多说了做完后可以参考这篇<a href="https://yafine-blog.cn/posts/4ab2.html" target="_blank" rel="noopener">绑定域名</a>域名购买也不贵当然是普通的。遇到的问题就是博客说的在 (注意：在这之前需要在站点根目录的 source 目录下新建一个 CNAME 文件，里面写入自己的域名，然后保存，在进行如下的步骤。这样到最后当你在地址栏输入<code>xxx.github.io</code>时，才会自动跳转到你的域名。)刚开始不理解CNAME文件是什么，通过网上资料发现是修改域名别名的。然后其实这个文件可以用记事本创建然后把后缀名删掉。创建完要  hexo &amp;&amp; clean &amp;&amp; hexo g &amp;&amp; hexo d 上传服务器,然后就跟着博客操作就行了  <h2 id="最后个人感受"><a href="#最后个人感受" class="headerlink" title="最后个人感受"></a>最后个人感受</h2></li>
+<li><p>操作到这一步的时候页面基本成型，在本地跑起来也比较快，不过在线上网站跑的时候速度异常慢，原因是本地图片加载过于缓慢，再加上github服务器在国外，对于国内访问不良好所导致的解决方法：<br>推荐这篇文章<a href="https://cungudafa.gitee.io/post/2a9.html" target="_blank" rel="noopener">搭建自己免费的cdn</a>,非常详细跟着操作就行，做完以后就会有自己的cdn,试着访问速度大大提升。图片加载速度还可以<br><code>git add . &amp;&amp; git commit -m &quot;第一次提交&quot; &amp;&amp; git push</code><br><img src="https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn@1.1/images/lading.gif" data-original="https://i.loli.net/2020/07/18/XvkYwNFZU6Wj1PT.png" alt=""><br>在这里说下怎么把本地图片变成url =&gt;点击这个<a href="https://sm.ms/" target="_blank" rel="noopener">sm</a>轻量免费的图床<br>让图片上传。  </p>
+</li>
+<li><p>由于第一次接触cdn我就把它简单理解成把图片挂载在github+lsDelivr这个服务器上，然后把本地的图片路径改成你所对应的<code>https://cdn.jsdelivr.net/gh/</code>后面跟着就是你的github名字加图片所对应的地址  </p>
+</li>
+<li><p>还有就是图片懒加载的地址是放在 <code>hexo-theme-matery\source\images</code>这个目录下的;   </p>
+</li>
+<li><p>如果是首先启动界面动画的设置的话推荐这篇<a href="https://yafine-blog.cn/posts/7400.html" target="_blank" rel="noopener">loading-pages</a>只要引入js文件就可以了;</p>
+</li>
+<li><p>其他一些细节要注意看上面相关文章的点，里面都有详细介绍。<br>-再补充一下如果要修改背景音乐的话可以在主配置文件中找到音乐然后里面有提示可以根据提示修改<br><img src="https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn@1.1/images/lading.gif" data-original="https://i.loli.net/2020/07/19/b5tPsXiy4grMJKU.png" alt=""><br>这里插入音乐链接的话我使用的是网易外部链接<a href="https://music.163.com/" target="_blank" rel="noopener">网易pc端</a>里面找到自己喜欢的歌曲然后点生成外链播放器在里面可以看到他会生成一段代码可以把那个链接的id数拷贝过来替代原来的id就可以了;但是如果看到的是由于版权保护，无法生成外链。那就看这篇文章<a href="https://www.cnblogs.com/cstdio1/p/11617357.html" target="_blank" rel="noopener">解决版权保护问题</a>，然后就可以添加啦   </p>
+</li>
+<li><p>7.21 今天又发现一个小问题并且解决了 具体是我在hexo s 的时候经常出现 <strong>报错YAMLException</strong>  一直纳闷哪里出了 问题，总结是我修改博文出现问题然后定位在博文上在网上查资料发现<a href="https://www.dazhuanlan.com/2019/10/16/5da60c94eed63/" target="_blank" rel="noopener">Hexo生成部署博文时</a>,然后定位到了我是<strong>“-”符号前后都要有空格！</strong>问题出在这里，同时发现了分类功能的添加</p>
+<p><code>categories: categorie1</code> 到这里基本博客信息都完善了</p>
+<h2 id="绑定域名"><a href="#绑定域名" class="headerlink" title="绑定域名"></a>绑定域名</h2></li>
+<li><p>再补充下怎么通过自己的域名打开至于注册域名的话可以去阿里云搜索自己的喜欢的域名注册到实名就不多说了做完后可以参考这篇<a href="https://yafine-blog.cn/posts/4ab2.html" target="_blank" rel="noopener">绑定域名</a>域名购买也不贵当然是普通的。遇到的问题就是博客说的在 (注意：在这之前需要在站点根目录的 source 目录下新建一个 CNAME 文件，里面写入自己的域名，然后保存，在进行如下的步骤。这样到最后当你在地址栏输入<code>xxx.github.io</code>时，才会自动跳转到你的域名。)刚开始不理解CNAME文件是什么，通过网上资料发现是修改域名别名的。然后其实这个文件可以用记事本创建然后把后缀名删掉。创建完要  hexo &amp;&amp; clean &amp;&amp; hexo g &amp;&amp; hexo d 上传服务器,然后就跟着博客操作就行了  </p>
+</li>
+</ul>
+<h2 id="最后个人感受"><a href="#最后个人感受" class="headerlink" title="最后个人感受"></a>最后个人感受</h2><ul>
 <li>总体上还是可以的，就是细节处理不是很好，本来想加入天气插件发现效果不是很好放弃了。而且图片样式没选好，做不成很好看的博客，后续进行修改，总结花了4天时间，前两天疯狂踩坑，这个是第5个成型版本，不过相对的也让我操作娴熟了很多。然后就是第一次写经验的博客很多东西可能解释不是很完善。同时要感谢<a href="https://ling-collab.github.io/2020/071154549.html#vcomments" target="_blank" rel="noopener">于心所善</a>博主提供的文章解释。后续加油努力做得更好！</li>
 </ul>
 
@@ -1306,8 +1325,12 @@
                         </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            小蛮牙
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/javascript/" class="post-category">
+                                    javascript
+                                </a>
+                            
                             
                         </span>
                     </div>
@@ -1353,8 +1376,12 @@ css3动画：http://css.cuishifeng.cn/
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            小蛮牙
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
+                                    前端
+                                </a>
+                            
                             
                         </span>
                     </div>
@@ -1516,7 +1543,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">4.6k</span>&nbsp;字
+                class="white-color">7.3k</span>&nbsp;字
             
             
             
