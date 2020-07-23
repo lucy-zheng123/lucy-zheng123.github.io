@@ -373,7 +373,7 @@
     
     <a href="/about" class="waves-effect waves-light">
       
-      <i class="fas fa-user-circle-o" style="zoom: 0.6;"></i>
+      <i class="fas fa-address-card" style="zoom: 0.6;"></i>
       
       <span>关于</span>
     </a>
@@ -398,6 +398,17 @@
       <i class="fas fa-address-book" style="zoom: 0.6;"></i>
       
       <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/navigate" class="waves-effect waves-light">
+      
+      <i class="fas fa-location-arrow" style="zoom: 0.6;"></i>
+      
+      <span>快捷导航</span>
     </a>
     
   </li>
@@ -476,7 +487,7 @@
 	  
 		<a href="/about" class="waves-effect waves-light">
 			
-			    <i class="fa-fw fas fa-user-circle-o"></i>
+			    <i class="fa-fw fas fa-address-card"></i>
 			
 			关于
 		</a>
@@ -501,6 +512,17 @@
 			    <i class="fa-fw fas fa-address-book"></i>
 			
 			友情链接
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/navigate" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-location-arrow"></i>
+			
+			快捷导航
 		</a>
           
         </li>
@@ -744,14 +766,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.8k
+                    2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    6 分
+                    7 分
                 </div>
                 
 
@@ -805,6 +827,23 @@
 </ul>
 <h2 id="最后个人感受"><a href="#最后个人感受" class="headerlink" title="最后个人感受"></a>最后个人感受</h2><ul>
 <li><p>最近想弄个代码高亮显示，然后把代码复制进去一直显示报错，最后弄才发型在配置文件里面空格也是极为重要的，在highliht里面就是因为enable少打了空格结果代码出现致命错误跑不起来</p>
+</li>
+<li><p>然后解决了这个bug首先代码高亮要下载插件这里就推荐 <a href="https://yafine-blog.cn/posts/5dbf.html" target="_blank" rel="noopener">博文</a>然后跟着改成这样</p>
+</li>
+<li><pre class="line-numbers language-javascript"><code class="language-javascript">highlight<span class="token punctuation">:</span>
+ enable<span class="token punctuation">:</span> <span class="token boolean">false</span>
+# line_number<span class="token punctuation">:</span> <span class="token boolean">true</span>
+# auto_detect<span class="token punctuation">:</span> <span class="token boolean">false</span>
+# tab_replace<span class="token punctuation">:</span> <span class="token string">''</span>
+# wrap<span class="token punctuation">:</span> <span class="token boolean">true</span>
+# hljs<span class="token punctuation">:</span> <span class="token boolean">false</span>
+prism_plugin<span class="token punctuation">:</span>
+  mode<span class="token punctuation">:</span> <span class="token string">'preprocess'</span>    # realtime<span class="token operator">/</span>preprocess
+  theme<span class="token punctuation">:</span> <span class="token string">'shades-of-purple'</span>
+  line_number<span class="token punctuation">:</span> <span class="token boolean">true</span>    # <span class="token keyword">default</span> <span class="token boolean">false</span>
+  custom_css<span class="token punctuation">:</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>我的line_number: true是为了显示代码行数的，然后改了这里为true还需要修改下推荐博文  第三部分的<a href="https://blog.csdn.net/Edviv/article/details/106590341" target="_blank" rel="noopener">2.1</a>然后修改就行了至于要修改的主题 可以修改theme：””相关配置详情参考 <a href="https://yafine-blog.cn/posts/f295.html" target="_blank" rel="noopener">这篇博文</a> 注意一点要代码生效需要hexo clean g s 再看效果 (7.23)</p>
 </li>
 <li><p>总体上还是可以的，就是细节处理不是很好，本来想加入天气插件发现效果不是很好放弃了。而且图片样式没选好，做不成很好看的博客，后续进行修改，总结花了4天时间，前两天疯狂踩坑，这个是第5个成型版本，不过相对的也让我操作娴熟了很多。然后就是第一次写经验的博客很多东西可能解释不是很完善。同时要感谢<a href="https://ling-collab.github.io/2020/071154549.html#vcomments" target="_blank" rel="noopener">于心所善</a>博主提供的文章解释。后续加油努力做得更好！</p>
 </li>
@@ -1548,7 +1587,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">13.2k</span>&nbsp;字
+                class="white-color">13.8k</span>&nbsp;字
             
             
             
