@@ -159,7 +159,8 @@
     };
     loaded();
 })()
- </script><meta name="generator" content="Hexo 4.2.1"><style type="text/css" lang="css">
+ </script><meta name="generator" content="Hexo 4.2.1"><link rel="stylesheet" href="/css/prism-shades-of-purple.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"><style type="text/css" lang="css">
     #loading-container{
         position: fixed;
         top: 0;
@@ -796,13 +797,17 @@
 <li><p>其他一些细节要注意看上面相关文章的点，里面都有详细介绍。<br>-再补充一下如果要修改背景音乐的话可以在主配置文件中找到音乐然后里面有提示可以根据提示修改<br><img src="https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn@1.1/images/lading.gif" data-original="https://i.loli.net/2020/07/19/b5tPsXiy4grMJKU.png" alt=""><br>这里插入音乐链接的话我使用的是网易外部链接<a href="https://music.163.com/" target="_blank" rel="noopener">网易pc端</a>里面找到自己喜欢的歌曲然后点生成外链播放器在里面可以看到他会生成一段代码可以把那个链接的id数拷贝过来替代原来的id就可以了;但是如果看到的是由于版权保护，无法生成外链。那就看这篇文章<a href="https://www.cnblogs.com/cstdio1/p/11617357.html" target="_blank" rel="noopener">解决版权保护问题</a>，然后就可以添加啦   </p>
 </li>
 <li><p>7.21 今天又发现一个小问题并且解决了 具体是我在hexo s 的时候经常出现 <strong>报错YAMLException</strong>  一直纳闷哪里出了 问题，总结是我修改博文出现问题然后定位在博文上在网上查资料发现<a href="https://www.dazhuanlan.com/2019/10/16/5da60c94eed63/" target="_blank" rel="noopener">Hexo生成部署博文时</a>,然后定位到了我是<strong>“-”符号前后都要有空格！</strong>问题出在这里，同时发现了分类功能的添加</p>
-<p><code>categories: categorie1</code> 到这里基本博客信息都完善了</p>
-<h2 id="绑定域名"><a href="#绑定域名" class="headerlink" title="绑定域名"></a>绑定域名</h2></li>
-<li><p>再补充下怎么通过自己的域名打开至于注册域名的话可以去阿里云搜索自己的喜欢的域名注册到实名就不多说了做完后可以参考这篇<a href="https://yafine-blog.cn/posts/4ab2.html" target="_blank" rel="noopener">绑定域名</a>域名购买也不贵当然是普通的。遇到的问题就是博客说的在 (注意：在这之前需要在站点根目录的 source 目录下新建一个 CNAME 文件，里面写入自己的域名，然后保存，在进行如下的步骤。这样到最后当你在地址栏输入<code>xxx.github.io</code>时，才会自动跳转到你的域名。)刚开始不理解CNAME文件是什么，通过网上资料发现是修改域名别名的。然后其实这个文件可以用记事本创建然后把后缀名删掉。创建完要  hexo &amp;&amp; clean &amp;&amp; hexo g &amp;&amp; hexo d 上传服务器,然后就跟着博客操作就行了  </p>
+<p><code>categories: categorie1</code> 到这里基本博客信息都完善了  </p>
 </li>
 </ul>
+<h2 id="绑定域名"><a href="#绑定域名" class="headerlink" title="绑定域名"></a>绑定域名</h2><ul>
+<li>再补充下怎么通过自己的域名打开至于注册域名的话可以去阿里云搜索自己的喜欢的域名注册到实名就不多说了做完后可以参考这篇<a href="https://yafine-blog.cn/posts/4ab2.html" target="_blank" rel="noopener">绑定域名</a>域名购买也不贵当然是普通的。遇到的问题就是博客说的在 (注意：在这之前需要在站点根目录的 source 目录下新建一个 CNAME 文件，里面写入自己的域名，然后保存，在进行如下的步骤。这样到最后当你在地址栏输入<code>xxx.github.io</code>时，才会自动跳转到你的域名。)刚开始不理解CNAME文件是什么，通过网上资料发现是修改域名别名的。然后其实这个文件可以用记事本创建然后把后缀名删掉。创建完要  hexo &amp;&amp; clean &amp;&amp; hexo g &amp;&amp; hexo d 上传服务器,然后就跟着博客操作就行了  </li>
+</ul>
 <h2 id="最后个人感受"><a href="#最后个人感受" class="headerlink" title="最后个人感受"></a>最后个人感受</h2><ul>
-<li>总体上还是可以的，就是细节处理不是很好，本来想加入天气插件发现效果不是很好放弃了。而且图片样式没选好，做不成很好看的博客，后续进行修改，总结花了4天时间，前两天疯狂踩坑，这个是第5个成型版本，不过相对的也让我操作娴熟了很多。然后就是第一次写经验的博客很多东西可能解释不是很完善。同时要感谢<a href="https://ling-collab.github.io/2020/071154549.html#vcomments" target="_blank" rel="noopener">于心所善</a>博主提供的文章解释。后续加油努力做得更好！</li>
+<li><p>最近想弄个代码高亮显示，然后把代码复制进去一直显示报错，最后弄才发型在配置文件里面空格也是极为重要的，在highliht里面就是因为enable少打了空格结果代码出现致命错误跑不起来</p>
+</li>
+<li><p>总体上还是可以的，就是细节处理不是很好，本来想加入天气插件发现效果不是很好放弃了。而且图片样式没选好，做不成很好看的博客，后续进行修改，总结花了4天时间，前两天疯狂踩坑，这个是第5个成型版本，不过相对的也让我操作娴熟了很多。然后就是第一次写经验的博客很多东西可能解释不是很完善。同时要感谢<a href="https://ling-collab.github.io/2020/071154549.html#vcomments" target="_blank" rel="noopener">于心所善</a>博主提供的文章解释。后续加油努力做得更好！</p>
+</li>
 </ul>
 
             </div>
@@ -1543,7 +1548,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">14k</span>&nbsp;字
+                class="white-color">13.2k</span>&nbsp;字
             
             
             
