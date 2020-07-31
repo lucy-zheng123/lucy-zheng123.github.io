@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="this指向-进阶篇, 木心">
+    <meta name="keywords" content="react-项目篇, 木心">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>this指向-进阶篇 | 木心</title>
+    <title>react-项目篇 | 木心</title>
     <link rel="icon" type="image/jpeg" href="https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn@1.1/medias/avatar.jpg">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -606,12 +606,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn//medias/featureimages/5.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn//medias/featureimages/10.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">this指向-进阶篇</h1>
+                    <h1 class="description center-align post-title">react-项目篇</h1>
                 </div>
             </div>
         </div>
@@ -732,23 +732,14 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/JavaScript%E7%AF%87/">
-                                <span class="chip bg-color">JavaScript篇</span>
+                            <a href="/tags/react/">
+                                <span class="chip bg-color">react</span>
                             </a>
                         
                     </div>
                     
                 </div>
                 <div class="col s5 right-align">
-                    
-                    <div class="post-cate">
-                        <i class="fas fa-bookmark fa-fw icon-category"></i>
-                        
-                            <a href="/categories/javascript%E7%AF%87/" class="post-category">
-                                javascript篇
-                            </a>
-                        
-                    </div>
                     
                 </div>
             </div>
@@ -757,28 +748,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-07-18
+                    2020-07-27
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-07-22
+                    2020-07-31
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    400
+                    1.7k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    8 分
                 </div>
                 
 
@@ -793,14 +784,361 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="this关键字指向问题"><a href="#this关键字指向问题" class="headerlink" title="this关键字指向问题"></a>this关键字指向问题</h1><h2 id="this在各个场景下表示什么值"><a href="#this在各个场景下表示什么值" class="headerlink" title="this在各个场景下表示什么值"></a>this在各个场景下表示什么值</h2><ul>
-<li>1.首先是在全局环境中的this.在全局环境中。this指向window对象;如：<br><code>alert(this)  //控制台输出（object.window）</code><br><code>alert(this === window);   // true</code>  </li>
-<li>2.事件处理中的this 在事件处理函数中，this指向当前节点，就是说绑定事件的那个节点;  </li>
-<li>3  构造函数中的this 构造函数中，this指向被创建的对象<br><img src="https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn@1.1/images/lading.gif" data-original="https://i.loli.net/2020/07/18/nkVZyKPMCOYRzgm.png" alt=""><br>可以清楚发现调用者是谁this就指向谁，如果是自己调用则是参考1指向全局变量 <h2 id="改变指向问题"><a href="#改变指向问题" class="headerlink" title="改变指向问题"></a>改变指向问题</h2></li>
-<li>了解了this的基本指向我们再来看看函数对象的call()、apply() 方法(这些方法原理上是改变了this的指向对象)<br>函数作为对象提供了call()，apply() 方法，他们也可以用来调用函数，这两个方法都接受一个对象作为参数，用来指定本次调用时函数中this的指向；</li>
-</ul>
-<p>call()方法<br>call方法使用的语法规则<br>函数名称.call(obj,arg1,arg2…argN);<br>参数说明:<br>obj:函数内this要指向的对象（像上面的student我可以改成其他对象））<br>arg1,arg2…argN :参数列表，参数与参数之间使用一个逗号隔开<br><img src="https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn@1.1/images/lading.gif" data-original="https://i.loli.net/2020/07/18/wzPvl6rOsTDXnbH.png" alt=""><br>apply()方法<br>函数名称.apply(obj,[arg1,arg2…,argN])<br>参数说明:<br>obj :this要指向的对象<br>[arg1,arg2…argN] : 参数列表，要求格式为数组<br><img src="https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn@1.1/images/lading.gif" data-original="https://i.loli.net/2020/07/18/OHxXFGg8ot7sTl4.png" alt="">  </p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>1.两者所实现的功能都是改变this指向问题<br>2. 但是区别是 =&gt; call改变的是对象 =&gt; apply改变的是数组;  </p>
+                <p>ant 蚂蚁框架  <a href="https://mobile.ant.design/docs/react/introduce-cn" target="_blank" rel="noopener">官方文档</a></p>
+<p>安装使用：</p>
+<p> <code>cnpm install antd-mobile --save</code></p>
+<p>全部导入样式和js：</p>
+<pre class="line-numbers language-css"><code class="language-css"><span class="token selector">import </span><span class="token punctuation">{</span> Button <span class="token punctuation">}</span> from <span class="token string">'antd-mobile'</span><span class="token punctuation">;</span>
+
+import <span class="token string">'antd-mobile/dist/antd-mobile.css'</span><span class="token punctuation">;</span> <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>按需要导入</p>
+<p>1.安装插件</p>
+<p><code>cnpm intsall babel-plugin-import --save</code></p>
+<p>2.配置</p>
+<p>npm命令</p>
+<p>npm run eject (这里要是报错了参考这篇  <a href="https://blog.csdn.net/August_leo/article/details/85463753" target="_blank" rel="noopener">文章</a> )</p>
+<p>Packjson</p>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token string">"babel"</span><span class="token keyword">:</span> <span class="token punctuation">{</span>
+    <span class="token string">"presets"</span><span class="token keyword">:</span> <span class="token punctuation">[</span>
+      <span class="token string">"react-app"</span>
+    <span class="token punctuation">]</span>,
+    <span class="token string">"plugins"</span><span class="token keyword">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">[</span><span class="token string">"import"</span>, <span class="token punctuation">{</span> <span class="token string">"libraryName"</span><span class="token keyword">:</span> <span class="token string">"antd-mobile"</span>, <span class="token string">"style"</span><span class="token keyword">:</span> <span class="token string">"css"</span> <span class="token punctuation">}</span><span class="token punctuation">]</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>项目数据</p>
+<p>1.数据导入</p>
+<p>Quizzes.json文件导入数据库。1创建数据库，右键点击表，选择导入文件，文件导入json文件，后面都是点击下一步，最后点击完成。</p>
+<p>温馨提示：如果之前没有安装过mysql就需要先去官方下载  <a href="https://dev.mysql.com/downloads/mysql/" target="_blank" rel="noopener">官网</a>然后下载好了需要配置的话看 <a href="https://blog.csdn.net/u014722022/article/details/100170664?biz_id=102&utm_term=mysql%E5%AE%89%E8%A3%85&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-0-100170664&spm=1018.2118.3001.4187" target="_blank" rel="noopener">这篇文章</a>接着配置好了需要启动数据库的话看 <a href="https://www.cnblogs.com/fanghl/p/11400412.html" target="_blank" rel="noopener">这篇文章</a>然后数据正常启动需要安装一个可视化化工具，这里推荐 <a href="https://www.navicat.com.cn/store/navicat-for-mysql" target="_blank" rel="noopener">Navicat for MySQL</a>工具，然后新建数据库至于密码默认是root点击测试连接连接成功就可以操作上一步 至于导入的话要在创建数据库的表里进行</p>
+<p>更正一下，原官网的软件下载有问题会出现乱码格式 所以下载这个 <a href="http://www.navicat.com.cn/download/direct-download?product=navicat_premium_cs_x64.exe&location=1" target="_blank" rel="noopener">Navicat Premium 15</a> 后面是版本自己选择下载，然后重新导入数据库这里有个坑</p>
+<p><img src="https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn@1.1/images/lading.gif" data-original="https://img2018.cnblogs.com/blog/1212026/201906/1212026-20190616160920329-552935631.png" alt=""></p>
+<p>不要选择下面的的东西不然会默认导入其中一个，这里是默认为null的 也就是所打空格，不过刚开始一直报没填的错误，就选择性看下列表结果空格进去了，然后就可以导入发现之前的符号问题解决了。</p>
+<p>2.创建服务器</p>
+<p>npm init</p>
+<p>cnpm install express –save</p>
+<p>cnpm install  mysql –save</p>
+<p>创建index.js文件</p>
+<p>再执行 node index.js 开启服务器</p>
+<p>3.前端依赖</p>
+<p>需要安装的内容 cnpm axios,react-router-dom.redux,react-redux</p>
+<p>开始项目</p>
+<p>index首页配置 把代码抽离成组件然后路由挂载</p>
+<pre><code>import React  from &#39;react&#39;;
+import ReactDOM from &#39;react-dom&#39;;
+// import App from &#39;./App.js&#39;
+
+import {Provider} from &#39;react-redux&#39;
+import{BrowserRouter as Router,Route}from &#39;react-router-dom&#39;
+import store from &#39;./store/data&#39;
+import App from &#39;./view/App&#39;
+import Dati from &#39;./view/Dati&#39;
+import Result from &#39;./view/Result&#39;
+
+
+ReactDOM.render(
+  &lt;Provider store={store}&gt;
+    &lt;Router&gt;
+      &lt;Route path=&#39;/&#39; exact component={App}&gt;&lt;/Route&gt;
+      &lt;Route path=&#39;/dati&#39; component={Dati}&gt;&lt;/Route&gt;
+      &lt;Route path=&#39;/result&#39; component={Result}&gt;&lt;/Route&gt;
+    &lt;/Router&gt;
+  &lt;/Provider&gt;,
+  document.querySelector(&#39;#root&#39;)
+
+);</code></pre><p>App 组件 connect前面讲过用于链接方法和state状态的</p>
+<pre><code>import React from &#39;react&#39;;
+// import ReactDom from &#39;react-dom&#39;
+import {connect} from &#39;react-redux&#39;
+import { Button } from &#39;antd-mobile&#39;;
+
+class Counter extends React.Component{
+    render(){
+      // console.log(this.props);
+      return(
+        &lt;div&gt;
+          &lt;Button onClick={this.goDatiPage}&gt; 随机答题 &lt;/Button&gt;
+          &lt;Button onClick={this.goDatiPage}&gt; 闯关答题 &lt;/Button&gt;
+          &lt;Button onClick={this.goDatiPage}&gt; 抽奖答题 &lt;/Button&gt;
+        &lt;/div&gt;
+      )
+
+    }
+    goDatiPage=() =&gt; {
+      console.log(this.props);
+      this.props.history.push(&#39;/dati&#39;)
+    }
+  }
+
+  const addAction = {
+    type: &#39;add&#39;
+  }
+
+  //将状态映射到props函数
+  function mapStateToProps(state){
+    return{
+      value: state.num
+    }
+  }
+  //将修改state数据的方法，映射到props,，默认会传入dispach方法
+  function mapDispatchToProps(dispatch){
+    return {
+      onAddClick:()=&gt;{
+        dispatch(addAction)
+      },
+      onAddClick5:()=&gt;{
+        //动作类型
+      dispatch({type:&#39;addNum&#39;,num:5})
+      }
+    }
+  }
+  //将上面的这两个方法，将数据仓库的state和修改state的方法映射到组件上，形成新的组件
+  const App = connect(
+    mapStateToProps,
+    mapDispatchToProps
+  )(Counter)
+
+  export default App
+</code></pre><p>接着配置答题页面 dati.js 内容比较多要实现拿数据方法然后进行展示处理数据状态等</p>
+<pre><code>import React from &#39;react&#39;;
+// import ReactDom from &#39;react-dom&#39;
+import {connect} from &#39;react-redux&#39;
+// import { Button } from &#39;antd-mobile&#39;;
+import fns from &#39;../store/asyncMethods&#39; 
+import loadingImg from &#39;../assets/img/loading.gif&#39;
+import {} from &#39;../assets/css/style.css&#39;
+class DatiCom extends React.Component{
+  constructor(props){
+    super(props)
+    this.state= {
+      currentTimu : 0,
+      optionsStyle: [&#39;optionItem&#39;,&#39;optionItem&#39;,&#39;optionItem&#39;,&#39;optionItem&#39;],
+      isChoose: false,
+      score: 0
+
+    }
+
+  }
+  componentWillMount(){
+
+   this.props.getTimu()
+
+  }
+
+    render(){
+      // console.log(this.props);
+      let timuArr = this.props.timuList;
+      let currentNum = this.state.currentTimu;
+      let oStyle = this.state.optionsStyle
+
+
+
+      //如果数据没有加载进来就设置成loading
+      if (timuArr.length &gt; 0) {
+        let options = JSON.parse(timuArr[currentNum].options) 
+        return(
+          &lt;div className=&#39;datiPage&#39;&gt;
+            &lt;h2&gt;
+        {currentNum+1}- 题目：{timuArr[currentNum].quiz}
+            &lt;/h2&gt;
+            &lt;div className=&#39;options&#39;&gt;
+            {
+              options.map((item,index)=&gt;{
+                return(
+                  &lt;div key={index} className={oStyle[index]} 
+                  onClick={()=&gt;    {this.answerEvent(index)}}&gt;
+                    {index+1}:{item}
+                  &lt;/div&gt;
+                )
+              })
+            }
+            &lt;/div&gt;
+          &lt;/div&gt;
+        )
+      }else{
+        return(
+          &lt;div&gt;
+          &lt;img alt=&#39;img&#39; src={loadingImg}&gt;&lt;/img&gt;
+        &lt;/div&gt;
+        )
+      } 
+
+    }
+    goDatiPage=() =&gt; {
+      // console.log(this.props);
+      this.props.history.push(&#39;/dati&#39;)
+    }
+    answerEvent=(index) =&gt; {
+     if(this.state.isChoose){
+       return true;
+     }
+    //  console.log(index);
+     let currentAnswer = this.props.timuList[this.state.currentTimu].answer;
+    //  console.log(currentAnswer);
+
+      //判断
+      let score = this.state.score;
+if ((index+1) === Number(currentAnswer)) {
+  let optionsStyle = this.state.optionsStyle;
+  optionsStyle[index] = &#39;optionItem correct&#39;;
+  this.setState({
+    optionsStyle: optionsStyle,
+    isChoose : true,
+    score: score+10
+  })
+}else{
+  let optionsStyle = this.state.optionsStyle;
+  optionsStyle[index] = &#39;optionItem error&#39;;
+  optionsStyle[Number(currentAnswer) - 1] = &#39;optionItem correct&#39;
+  this.setState({
+    optionsStyle: optionsStyle,
+    isChoose:true
+  })
+
+}
+//2秒跳转下一题
+setTimeout(() =&gt;{
+      let currentNum = this.state.currentTimu
+      currentNum++
+      if(currentNum === 10){
+        this.props.history.push(&#39;/result&#39;,{score:this.state.score})
+      }else{
+        this.setState({
+          currentTimu:currentNum,
+          optionsStyle: [&#39;optionItem&#39;,&#39;optionItem&#39;,&#39;optionItem&#39;,&#39;optionItem&#39;],
+          isChoose : false,
+        })
+      }
+
+},2000);
+
+
+    }
+
+  }
+
+  const addAction = {
+    type: &#39;add&#39;
+  }
+
+
+  //将状态映射到props函数
+  function mapStateToProps(state){
+    //结构题目列表
+   return {...state}
+
+  }
+  //将修改state数据的方法，映射到props,，默认会传入dispach方法
+  function mapDispatchToProps(dispatch){
+    return {
+      onAddClick:()=&gt;{
+        dispatch(addAction)
+      },
+      getTimu:async ()=&gt;{
+       let list = await fns.TmList()
+       dispatch({type: &#39;setTimu&#39;,content: list})
+
+      //  console.log(list);
+      }
+    }
+  }
+  //将上面的这两个方法，将数据仓库的state和修改state的方法映射到组件上，形成新的组件
+  const Dati= connect(
+    mapStateToProps,
+    mapDispatchToProps
+  )(DatiCom)
+
+  export default Dati
+</code></pre><p>接着是 状态 和方法</p>
+<p>state.js     timuList 用于存放方法请求过来的数据</p>
+<pre><code>let state = {
+    timuList : [],
+
+}
+
+export default state </code></pre><p>methods.js 再把数据状态发出去 这里还有异步方法</p>
+<pre><code>
+
+let methods= {
+      setTimu: function(state,action){
+        state.timuList = action.content;
+        // console.log(state.timuList );
+        return state
+      }
+
+}
+
+
+
+export default methods</code></pre><pre><code>import axios from &#39;axios&#39;;
+
+let fns = {
+    async TmList(){
+        let page =  parseInt( Math.random()*1600 )
+        let httpUrl = `http://localhost:8080/api/rtimu/?page=${page}`
+        let res = await axios.get(httpUrl);
+        // console.log(res);
+        return res.data   
+    }
+
+}
+
+export default fns</code></pre><p>拿到的数据和方法需要再data.js里面进行处理 reducer 传给 store 再把这个传给 datai.js</p>
+<pre><code>import {createStore} from &#39;redux&#39;
+import methods from &#39;./methods&#39;
+import state from &#39;./state&#39;
+
+//初始化状态创建reduuer函数
+let data = state;
+
+//初创建reducer函数
+    let ActionFnobj= methods
+
+  function reducer (state = data,action){
+    // console.log(state);
+    // console.log(action);
+    if (action.type.indexOf(&#39;redux&#39;) === -1) {
+      state =ActionFnobj[action.type](state,action)
+      return {...state}
+    }else{
+      return state
+    }
+
+
+  }
+  const store = createStore(reducer)
+
+  export default store</code></pre><p>再做一个返回答题后获得的成绩再返回首页的组件 restult.js</p>
+<pre><code>import React from &#39;react&#39;;
+// import ReactDom from &#39;react-dom&#39;
+import {connect} from &#39;react-redux&#39;
+import { Button } from &#39;antd-mobile&#39;;
+
+class App extends React.Component{
+
+    render(){
+
+      console.log(this.props);
+      return(
+        &lt;div&gt;
+            &lt;h1&gt;恭喜你获得{this.props.location.state.score}分&lt;/h1&gt;
+          &lt;Button onClick={this.goDatiPage}&gt; 回到首页 &lt;/Button&gt;
+
+        &lt;/div&gt;
+      )
+
+    }
+    //返回首页
+    goDatiPage=() =&gt; {
+      console.log(this.props);
+      this.props.history.push(&#39;/&#39;)
+    }
+
+
+  }
+
+
+  export default App
+</code></pre><p>到这里基本完成 后面再补充下服务器端</p>
 
             </div>
             <hr/>
@@ -826,7 +1164,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://lucy-zheng123.github.io/2020/07/18/zheng-li-dui-https-xie-yi-de-li-jie/">https://lucy-zheng123.github.io/2020/07/18/zheng-li-dui-https-xie-yi-de-li-jie/</a>
+                    <a href="https://lucy-zheng123.github.io/2020/07/27/react-xiang-mu-pian/">https://lucy-zheng123.github.io/2020/07/27/react-xiang-mu-pian/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -864,8 +1202,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/JavaScript%E7%AF%87/">
-                                    <span class="chip bg-color">JavaScript篇</span>
+                                <a href="/tags/react/">
+                                    <span class="chip bg-color">react</span>
                                 </a>
                             
                         </div>
@@ -1300,32 +1638,36 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/07/19/zong-jie-dui-shu-zu-de-li-jie/">
+                <a href="/2020/07/30/react-jin-jie-pian/">
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn@1.1/images/lading.gif" data-original="https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn//medias/featureimages/10.jpg" class="responsive-img" alt="数据基本类型篇">
+                        <img src="https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn@1.1/images/lading.gif" data-original="https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn//medias/featureimages/1.jpg" class="responsive-img" alt="React-进阶篇">
                         
-                        <span class="card-title">数据基本类型篇</span>
+                        <span class="card-title">React-进阶篇</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            JS基础篇1：数据类型数据类型在es5之前数组的类型有6种分别是 :Number,String,null,underfined,Boolean；以及复杂类型：Object；
-ES6 中新增了一种 Symbol 。这种类型的对象永不相等，即始
+                            React Hooks用法
+
+要求做一个点击加一的数
+import {useState} from ‘react’
+//useState创造一个状态，赋值一个初始值。当前初始值为0
+const [count,setCount] = useS
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-07-19
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-07-30
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/javascript%E7%AF%87/" class="post-category">
-                                    javascript篇
+                            <a href="/categories/React/" class="post-category">
+                                    React
                                 </a>
                             
                             
@@ -1335,8 +1677,8 @@ ES6 中新增了一种 Symbol 。这种类型的对象永不相等，即始
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/JavaScript/">
-                        <span class="chip bg-color">JavaScript</span>
+                    <a href="/tags/React-Hooks/">
+                        <span class="chip bg-color">React-Hooks</span>
                     </a>
                     
                 </div>
@@ -1350,34 +1692,36 @@ ES6 中新增了一种 Symbol 。这种类型的对象永不相等，即始
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/07/17/kuai-su-da-jian-bo-ke/">
+                <a href="/2020/07/27/ba-ben-di-dai-ma-shang-chuan-dao-ma-yun/">
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn@1.1/images/lading.gif" data-original="https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn//medias/featureimages/4.jpg" class="responsive-img" alt="搭建博客-配置篇">
+                        <img src="https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn@1.1/images/lading.gif" data-original="https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn//medias/featureimages/6.jpg" class="responsive-img" alt="上传到码云">
                         
-                        <span class="card-title">搭建博客-配置篇</span>
+                        <span class="card-title">上传到码云</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            博客搭建hexo基本搭建
-搭建博客第一步需要安装相关的软件和搭配环境。这里就可以跟着脚本搭建脚本教程到了这里你发现最基本的hexo已经搭建好在搭建好的hexoblog下执行hexo s 可以在本地查看 hex d 在github上可以查看，
+                            首先去注册码云，然后在新建个项目
+
+
+下面的钩最好勾上不然后面他会让你选择其他的
+二、创建本地代码仓库
+新建个文件夹然后右键打开 Git Bash here (先安装git) 然后进去后执行
+git init
+之后可以看到在该文件夹下多了一
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-17
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-27
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E5%8D%9A%E5%AE%A2/" class="post-category">
-                                    博客
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            小蛮牙
                             
                         </span>
                     </div>
@@ -1385,8 +1729,8 @@ ES6 中新增了一种 Symbol 。这种类型的对象永不相等，即始
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%8D%9A%E5%AE%A2/">
-                        <span class="chip bg-color">博客</span>
+                    <a href="/tags/%E9%97%AE%E9%A2%98/">
+                        <span class="chip bg-color">问题</span>
                     </a>
                     
                 </div>

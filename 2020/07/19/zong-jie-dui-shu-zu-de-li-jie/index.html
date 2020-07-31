@@ -764,21 +764,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-07-22
+                    2020-07-25
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.2k
+                    1.4k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    4 分
+                    5 分
                 </div>
                 
 
@@ -916,6 +916,62 @@
 <p> <strong><em>8､BigInt 类型</em></strong></p>
 <p>​     <strong><em>Javascript 中的任意精度整数，可以安全存储和操作大整数。即始超出 Number 能够表示的安全整数范围。是 chrome 67中的新功能。*</em></strong></p>
 <p>转载CSDN博主「帅帅哥的兜兜」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。<a href="https://blog.csdn.net/u013592575/article/details/95087953" target="_blank" rel="noopener">原文链接：</a></p>
+<p>补充</p>
+<p>map和foEach</p>
+<p>对数组进行循环。相当于直接for循环,没有返回值</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">let</span> arr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">]</span>
+<span class="token keyword">let</span> res <span class="token operator">=</span> arr<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span>item <span class="token punctuation">,</span> index<span class="token punctuation">,</span> arr<span class="token punctuation">)</span><span class="token operator">=</span><span class="token operator">></span><span class="token punctuation">{</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>item<span class="token punctuation">,</span>index<span class="token punctuation">.</span>arr<span class="token punctuation">)</span>
+
+<span class="token keyword">return</span> item
+
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">//underfined</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>map</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript">  <span class="token keyword">let</span> arr2 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'苹果'</span><span class="token punctuation">,</span><span class="token string">'香蕉'</span><span class="token punctuation">,</span><span class="token string">'草莓'</span><span class="token punctuation">,</span><span class="token string">'芒果'</span><span class="token punctuation">]</span>
+        <span class="token comment" spellcheck="true">//map 对数组每一项进行加工，加工完成后返回一个新数组</span>
+         <span class="token keyword">let</span> res2 <span class="token operator">=</span> arr2<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span>item<span class="token punctuation">,</span>index<span class="token punctuation">,</span>arr<span class="token punctuation">)</span><span class="token operator">=</span><span class="token operator">></span><span class="token punctuation">{</span>
+            <span class="token keyword">let</span> str <span class="token operator">=</span> index <span class="token operator">+</span> item <span class="token operator">+</span> index
+            <span class="token keyword">return</span> str
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res2<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>filter</p>
+<pre><code>   let arr3 = [&#39;1&#39;,&#39;2&#39;,&#39;3&#39;,&#39;4&#39;,&#39;5&#39;,&#39;6&#39;,&#39;7&#39;]
+          let res = arr3.filter((items,index)=&gt;{
+                if (items %2 == 0) {
+                    return true
+                }else{
+                    return false
+                }
+            })
+            console.log(res);
+</code></pre><p>reduce</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript">  <span class="token keyword">let</span> arr4 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'1'</span><span class="token punctuation">,</span><span class="token string">'2'</span><span class="token punctuation">,</span><span class="token string">'3'</span><span class="token punctuation">,</span><span class="token string">'4'</span><span class="token punctuation">,</span><span class="token string">'5'</span><span class="token punctuation">,</span><span class="token string">'6'</span><span class="token punctuation">,</span><span class="token string">'7'</span><span class="token punctuation">]</span>
+            <span class="token keyword">let</span> res4 <span class="token operator">=</span> arr4<span class="token punctuation">.</span><span class="token function">reduce</span><span class="token punctuation">(</span><span class="token punctuation">(</span>pre<span class="token punctuation">,</span>next<span class="token punctuation">,</span>index<span class="token punctuation">)</span><span class="token operator">=</span><span class="token operator">></span><span class="token punctuation">{</span>
+                console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>pre<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>next<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>index<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token keyword">return</span> pre<span class="token operator">+</span>next
+            <span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res4<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>for in </p>
+<pre class="line-numbers language-javascript"><code class="language-javascript"> <span class="token keyword">let</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span>
+                name <span class="token punctuation">:</span> <span class="token string">'小郑'</span><span class="token punctuation">,</span>
+                typeL<span class="token punctuation">:</span><span class="token string">'帅'</span><span class="token punctuation">,</span>
+                content<span class="token punctuation">:</span><span class="token string">'前端'</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">for</span><span class="token punctuation">(</span>key <span class="token keyword">in</span> obj<span class="token punctuation">)</span><span class="token punctuation">{</span>
+                console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"key:"</span><span class="token operator">+</span> key <span class="token operator">+</span> <span class="token string">" ---value:"</span><span class="token operator">+</span>obj<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span><span class="token comment" spellcheck="true">// 0 -- 小郑</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>for of</p>
+<pre><code>  let arr5 = [&quot;范冰冰&quot;,&#39;啊水&#39;,&#39;啊豪&#39;]
+            //for of 循环每一项
+            for(let item of arr5){
+                console.log(item);
+            } //范冰冰 阿水 啊豪</code></pre><p>区别 for in 是循环index for of 循环每一项</p>
 
             </div>
             <hr/>
@@ -1415,13 +1471,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/07/20/web-qian-duan-html5-ji-chu-pian/">
+                <a href="/2020/07/20/web-qian-duan-html5-zheng-li-pian/">
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn@1.1/images/lading.gif" data-original="https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn//medias/featureimages/5.jpg" class="responsive-img" alt="html5-基础篇">
+                        <img src="https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn@1.1/images/lading.gif" data-original="https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn//medias/featureimages/2.jpg" class="responsive-img" alt="html5-整理篇">
                         
-                        <span class="card-title">html5-基础篇</span>
+                        <span class="card-title">html5-整理篇</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1653,7 +1709,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">13.8k</span>&nbsp;字
+                class="white-color">22.5k</span>&nbsp;字
             
             
             

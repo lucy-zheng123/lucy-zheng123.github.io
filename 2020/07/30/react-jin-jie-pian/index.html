@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="html5-基础篇, 木心">
+    <meta name="keywords" content="React-进阶篇, 木心">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>html5-基础篇 | 木心</title>
+    <title>React-进阶篇 | 木心</title>
     <link rel="icon" type="image/jpeg" href="https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn@1.1/medias/avatar.jpg">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -606,12 +606,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn//medias/featureimages/5.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn//medias/featureimages/1.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">html5-基础篇</h1>
+                    <h1 class="description center-align post-title">React-进阶篇</h1>
                 </div>
             </div>
         </div>
@@ -732,8 +732,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/web%E5%89%8D%E7%AB%AF/">
-                                <span class="chip bg-color">web前端</span>
+                            <a href="/tags/React-Hooks/">
+                                <span class="chip bg-color">React-Hooks</span>
                             </a>
                         
                     </div>
@@ -744,8 +744,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
-                                前端
+                            <a href="/categories/React/" class="post-category">
+                                React
                             </a>
                         
                     </div>
@@ -757,28 +757,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-07-20
+                    2020-07-30
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-07-22
+                    2020-07-30
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2.2k
+                    174
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    9 分
+                    1 分
                 </div>
                 
 
@@ -793,187 +793,43 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="一、HTML-的历史"><a href="#一、HTML-的历史" class="headerlink" title="一、HTML 的历史"></a>一、HTML 的历史</h2><p> HTML, 超文本标记语言，英文全称是 Hyper Text Markup Language，由 Tim Berners-Lee 在 1982 年提出，它是互联网上应用最广泛的标记语言。HTML5 是指万维网的核心语言、标准通用标记语言下的一个应用超文本标记语言的第五次重大修改。HTML5 的设计目的是为了在移动设备上支持多媒体。新的语法特征被引进以支持这一点，引进了新的功能，可以真正改变用户与文档的交互方式。</p>
-<h2 id="HTML5组成标签"><a href="#HTML5组成标签" class="headerlink" title="HTML5组成标签"></a>HTML5组成标签</h2><h2 id="h5之前基本标签类型"><a href="#h5之前基本标签类型" class="headerlink" title="h5之前基本标签类型"></a>h5之前基本标签类型</h2><h3 id="1-构成标签"><a href="#1-构成标签" class="headerlink" title="1.构成标签"></a>1.构成标签</h3><blockquote>
-<pre class="line-numbers language-html"><code class="language-html"><span class="token doctype">&lt;!DOCTYPE html></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>viewport<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>width<span class="token punctuation">=</span>device-width, initial-scale<span class="token punctuation">=</span>1.0<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">http-equiv</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>X-UA-Compatible<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>ie<span class="token punctuation">=</span>edge<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token comment" spellcheck="true">&lt;!-- 优先使用最新的ie版本 --></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>文档标题<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>资源所在路径<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>规定被链接文档的MIME类型<span class="token punctuation">"</span></span> <span class="token attr-name">media</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">target</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>定义编码方式<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
-<span class="token comment" spellcheck="true">&lt;!--主体内容 显示在网页上的，由许多的标签组成--></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span>
-  ...
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>引用文件地址<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
- <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text/javascript<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-     <span class="token comment" spellcheck="true">&lt;!--自己写的JavaScript代码，可在当前页面写，也可以另外写一个js文件，然后在引入 --></span>
- <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-</blockquote>
-<ul>
-<li><p><code>&lt;!DOCTYPE HTML&gt;</code> 定义文档类型为html。这个声明是必要的，这个是用来声明文档类型，文档类型类似于连接，规定了HTML页面必须遵从良好的规定，能够自动检测错误和其他有用的东西</p>
-</li>
-<li><p><code>&lt;head&gt;&lt;/head&gt;</code>定义了文档相关信息。一般用于页面加载前先引用，所以用来加载css比较多</p>
-</li>
-<li><p><code>&lt;title&gt;&lt;/title&gt;</code> 定义的文档的标题</p>
-</li>
-<li><p><code>&lt;meta&gt;</code>定义文档的元信息，比如对页面进行描述，关键词，作者等。不会显示在网页上，常用属性有charset,name,http-equiv.content属性等；</p>
-</li>
-<li><p><code>&lt;link&gt;</code>用于链接式样式表，定义文档与外部资源的关系，关于什么是MIME类型，<a href="https://www.w3school.com.cn/media/media_mimeref.asp" target="_blank" rel="noopener">详情请看</a>有具体介绍；</p>
-</li>
-<li><p><code>&lt;!-- --&gt;</code>定义注解，注明一些信息。便于开发者和调试着浏览读懂代码</p>
-</li>
-<li><p><code>&lt;h1&gt; ~ &lt;h6&gt;</code>定义文章的字体大小常用于标题其中h1最大，h6最小；</p>
-</li>
-<li><p><code>&lt;p&gt;&lt;/p&gt;</code>段落标签。是块级属性（块级属性会独占一行）;</p>
-</li>
-<li><p><code>&lt;span&gt;&lt;/span&gt;</code>和<code>&lt;div&gt;&lt;/div&gt;</code>标签用法差不多都是定义文档节</p>
-</li>
-<li><p><code>&lt;iframe&gt;&lt;/iframe&gt;</code>定义文档的内联框架  </p>
-<hr>
-</li>
-</ul>
-<h3 id="2-表格标签"><a href="#2-表格标签" class="headerlink" title="2.表格标签"></a>2.表格标签</h3><table></table> 定义表格
-- `<th></th>` 定义表格的表头   
-
-<ul>
-<li><p><code>&lt;tr&gt;&lt;/tr&gt;</code> 定义表格的行  </p>
-</li>
-<li><p><code>&lt;td&gt;&lt;/td&gt;</code> 定义表格的单元  </p>
-</li>
-<li><p><code>&lt;caption&gt;&lt;/caption&gt;</code> 定义表格标题  </p>
-</li>
-<li><p><code>&lt;thead&gt;&lt;thead&gt;</code> 定义表格中的表头内容  </p>
-</li>
-<li><p><code>&lt;tbody&gt;&lt;/tbody&gt;</code> 定义表格中的主体内容  </p>
-</li>
-<li><p><code>&lt;tfoot&gt;&lt;/tfood&gt;</code> 定义表格中的表注内容（脚注）    </p>
-</li>
-</ul>
-<h3 id="3-列表标签"><a href="#3-列表标签" class="headerlink" title="3.列表标签"></a>3.列表标签</h3><p><code>&lt;ul&gt;&lt;/ul&gt;</code> 定义无序列表<br><code>&lt;ol&gt;&lt;/ol&gt;</code> 定义有序列表</p>
-<p><code>&lt;li&gt;&lt;/li&gt;</code> 定义列表项</p>
-<dl></dl> 定义列表
-`<dt></dt>` 自定义列表项目
-`<dd></dd>` 定义自定义列表的描述
-
-<h3 id="4-表单标签"><a href="#4-表单标签" class="headerlink" title="4.表单标签"></a>4.表单标签</h3><p><code>&lt;form&gt;&lt;/form&gt;</code> 定义供用户输入的表单</p>
-<p><code>&lt;input&gt;</code> 定义输入控件，如密码框，输入框，按钮等</p>
-<p><code>&lt;textarea&gt;&lt;/textarea&gt;</code> 定义文本域 （一个多行的输入控件）</p>
-<p><code>&lt;label&gt;&lt;/label&gt;</code> 定义了 <code>&lt;input&gt;</code>元素的标签，一般为输入标题<br><code>&lt;filedset&gt;&lt;/filedset&gt;</code> 定义了一组相关的表单元素，并使用外框包含起来<br><code>&lt;legend&gt;&lt;/legend&gt;</code>定义了 <code>&lt;fieldset&gt;</code>元素的标题</p>
-<p><code>&lt;select&gt;&lt;/select&gt;</code> 定义了下拉选项列表</p>
-<p><code>&lt;optgroup&gt;&lt;/optgroup&gt;</code> 定义了下拉选项组<br><code>&lt;option&gt;&lt;/option&gt;</code> 定义下拉列表中的选项</p>
-<p><code>&lt;button&gt;&lt;/button&gt;</code>定义一个点击按钮</p>
-<h3 id="5-多媒体链接"><a href="#5-多媒体链接" class="headerlink" title="5.多媒体链接"></a>5.多媒体链接</h3><p><code>&lt;a&gt;&lt;/a&gt;</code> 定义一个超链接<br><code>&lt;img&gt;</code> 定义图像</p>
-<p><embed></embed> 定义在页面中嵌入的内容，可插入音频视频等。</p>
-<h3 id="6-格式标签"><a href="#6-格式标签" class="headerlink" title="6.格式标签"></a>6.格式标签</h3><p><code>&lt;b&gt;&lt;b/&gt;</code> 定义粗体文本<br><code>&lt;del&gt;&lt;/del&gt;</code> 定义被删除文本<br><code>&lt;em&gt;&lt;/em&gt;</code> 定义强调文本<br><code>&lt;i&gt;&lt;/i&gt;</code>定义斜体文本<br><code>&lt;sup&gt;&lt;/sup&gt;</code>定义上标文本<br><code>&lt;sub&gt;&lt;/sub&gt;</code> 定义下标文本</p>
-<h2 id="HTML5新增的标签"><a href="#HTML5新增的标签" class="headerlink" title="HTML5新增的标签"></a>HTML5新增的标签</h2><h3 id="1-语义化标签"><a href="#1-语义化标签" class="headerlink" title="1.语义化标签"></a>1.语义化标签</h3><pre><code>&lt;header&gt;头部&lt;/header&gt;
-&lt;nav&gt;导航&lt;/nav&gt;
-
-&lt;!--区域--&gt;
-&lt;section&gt;
-    &lt;aside&gt;侧边栏&lt;/aside&gt;
-    &lt;article&gt;文章&lt;/article&gt;
-&lt;/section&gt;
- &lt;figure&gt;&lt;img&gt;&lt;/img&gt;&lt;/figure&gt;
-&lt;footer&gt;底部&lt;/footer&gt;</code></pre><p><code>&lt;section&gt;&lt;/section&gt;</code>独立的内容块，可用h1~h6组成大纲，表示文档结构；</p>
-<p><code>&lt;article&gt;&lt;/article&gt;</code> 用来在页面中表示一套结构完整且独立的内容部分</p>
-<p><code>&lt;aslde&gt;&lt;/aside&gt;</code>主题的附属信息 ( 用途很广，主要就是一个附属内容 ) ，</p>
-<h3 id="2-标签属性"><a href="#2-标签属性" class="headerlink" title="2.标签属性"></a>2.标签属性</h3><pre><code>    &lt;!--提示文本--&gt;
-    &lt;input type=&quot;text&quot; placeholder=&quot;请输入...&quot;&gt;&lt;br /&gt;
-
-    &lt;!--禁用--&gt;
-    &lt;input type=&quot;button&quot; value=&quot;提交&quot; disabled=&quot;disabled&quot;&gt;&lt;br /&gt;
-
-    &lt;form action=&quot;##&quot;&gt;
-        &lt;!--自动获取焦点--&gt;
-        &lt;input type=&quot;text&quot; autofocus=&quot;autofocus&quot; /&gt;&lt;br /&gt;
-
-        &lt;!--自动补全，off是默认值，配合name属性使用，name是组名的意思--&gt;
-        &lt;input type=&quot;text&quot; autocomplete=&quot;on&quot; name=&quot;sff&quot; /&gt;&lt;br /&gt;
-
-        &lt;!--非空验证--&gt;
-        &lt;input type=&quot;text&quot; required=&quot;required&quot; /&gt;&lt;br /&gt;
-        &lt;input type=&quot;submit&quot; value=&quot;提交&quot;&gt;
-    &lt;/form&gt;</code></pre><ul>
-<li><p>placecholder属性一般用于表单用户输入提示信息</p>
-</li>
-<li><p>disabled 属性表示禁用这个标签  </p>
-</li>
-</ul>
-<h3 id="3-表单类型"><a href="#3-表单类型" class="headerlink" title="3.表单类型"></a>3.表单类型</h3><pre class="line-numbers language-html"><code class="language-html">      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span> <span class="token attr-name">action</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>##<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-          <span class="token comment" spellcheck="true">&lt;!-- 邮箱类型 --></span>
-          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>email<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">></span></span>
-          <span class="token comment" spellcheck="true">&lt;!-- 网址类型 --></span>
-          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>url<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">></span></span>
-          <span class="token comment" spellcheck="true">&lt;!-- 数字类型 --></span>
-          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>number<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">></span></span>
-          <span class="token comment" spellcheck="true">&lt;!-- 颜色类型 --></span>
-          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>color<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">></span></span>
-          <span class="token comment" spellcheck="true">&lt;!-- 搜索类型 --></span>
-          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>search<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">></span></span>
-          <span class="token comment" spellcheck="true">&lt;!-- 本地时间类型 --></span>
-          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>datetime-local<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">></span></span>
-          <span class="token comment" spellcheck="true">&lt;!-- 月份类型 --></span>
-          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>month<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">></span></span>
-          <span class="token comment" spellcheck="true">&lt;!-- 周类型 --></span>
-          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>week<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">></span></span>
-          <span class="token comment" spellcheck="true">&lt;!-- 时间类型 --></span>
-          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>time<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">></span></span>
-          <span class="token comment" spellcheck="true">&lt;!-- 日期类型 --></span>
-          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>date<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">></span></span>
-          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>submit<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>提交<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="4-音频标签"><a href="#4-音频标签" class="headerlink" title="4.音频标签"></a>4.音频标签</h3><pre class="line-numbers language-html"><code class="language-html">    <span class="token comment" spellcheck="true">&lt;!--
-        音频标签：audio
-        音频文件路径标签:source
-        属性：
-        controls  音频界面
-        loop  自动播放
-        autoplay  自动播放
-        由于音频标签对于每个浏览器，不是所有的样式都能识别，此时要对同一个文件引入多个音频格式
-    --></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>audio</span> <span class="token attr-name">controls</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>controls<span class="token punctuation">"</span></span> <span class="token attr-name">loop</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>loop<span class="token punctuation">"</span></span> <span class="token attr-name">autoplay</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>autoplay<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>source</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>music/yinyue.mp3<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>source</span><span class="token punctuation">></span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>source</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>music/yinyue.ogg<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>source</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>audio</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="5-视频标签"><a href="#5-视频标签" class="headerlink" title="5.视频标签"></a>5.视频标签</h3><pre><code>    &lt;!--
-     视频标签的所有用法和音频一样
-     --&gt;
-     &lt;!-- 单个文件格式 --&gt;
-    &lt;!-- &lt;video src=&quot;video/movie.webm&quot; controls=&quot;controls&quot; loop=&quot;loop&quot; autoplay=&quot;autoplay&quot;&gt;&lt;/video&gt; --&gt;
-    &lt;video controls=&quot;controls&quot; loop=&quot;loop&quot; autoplay=&quot;autoplay&quot;&gt;
-        &lt;source src=&quot;video/movie.ogg&quot;&gt;&lt;/source&gt;
-        &lt;source src=&quot;video/movie.mp4&quot;&gt;&lt;/source&gt;
-    &lt;/video&gt;</code></pre><h3 id="6-其他功能标签"><a href="#6-其他功能标签" class="headerlink" title="6.其他功能标签"></a>6.其他功能标签</h3><p>  (1）mark：标注（像荧光笔做笔记）</p>
-<p>（2）progress：进度条；  </p>
-<p><code>&lt;progress max=&quot;最大进度条的值&quot; value=&quot;当前进度条的值&quot;&gt;</code></p>
-<p>（3）time：数据标签，给搜索引擎使用；发布日期<time datetime="2014-12-25T09:00">9：00</time>更新日期<time datetime="2015-01-23T04:00" pubdate>4:00</time></p>
-<p>（4）ruby和rt：对某一个字进行注释；</p>
-<p><code>&lt;ruby&gt;&lt;rt&gt;注释内容&lt;/rt&gt;&lt;rp&gt;浏览器不支持时如何显示&lt;/rp&gt;&lt;/ruby&gt;</code></p>
-<p>（5）wbr：软换行，页面宽度到需要换行时换行；</p>
-<p>（6）canvas：使用JS代码做内容进行图像绘制；</p>
-<p>（7）command：按钮；</p>
-<p>（8）deteils ：展开菜单；</p>
-<p>（9）dateilst：文本域下拉提示；</p>
-<p>（10）keygen:加密； </p>
-<h2 id="个人总结"><a href="#个人总结" class="headerlink" title="个人总结"></a>个人总结</h2><p>面试可能会考察到的点：</p>
-<p>什么是HTML语义化？</p>
+                <p>React Hooks用法</p>
 <blockquote>
-<p>答：可以先回答一些常见的标签 header main footer section等等。可以根据内容的机构选择合适的标签，便于开发者阅读以及调试</p>
+<p>要求做一个点击加一的数</p>
+<p>import {useState} from ‘react’</p>
+<p>//useState创造一个状态，赋值一个初始值。当前初始值为0</p>
+<p>const [count,setCount] = useState(0)</p>
+<p>//数组的第一个值是变量state值  第二个值是改变的函数可以修改state状态</p>
+<p>​    const addCount = ()=&gt;{</p>
+<p>setCount(count+=1)</p>
+<p>}</p>
+<p>{conut}</p>
+<p>onClick -={addCount}</p>
 </blockquote>
-<p>为什么要语义化？</p>
-<blockquote>
-<p>1.在没有css样式的情况下。页面也能展示良好的内容结构。代码结构。</p>
-<p>2.用户体验：例如title ，alt用于解释名词或者解释图片信息还有label标签的活用等等;</p>
-<p>3.便于团队开发和维护，语义化更具可读性，是下一步网页的重要动向，遵循W3C标准的团队都遵循这个标准，可以减少差异化</p>
-</blockquote>
+<p>全局共享状态 Hooks（钩子） useContext 导入</p>
+<pre><code>import React, {useState，useContext} from &#39;react&#39;
+const Achild= ()=&gt;{
+const {name} = useContext(AppConext)
+return(
+    &lt;div&gt;这是A组件的name {name}&lt;/div&gt;
+)
+}
+const Bchild= ()=&gt;{
+const {name} = useContext(AppConext)
+return(
+    &lt;div&gt;这是B组件的name {name}&lt;/div&gt;
+)
+}
 
+
+return (
+//要共享的数据
+    &lt;AppConext.Provider value = {name: &#39;小郑敲代码&#39;}
+    &lt;Achild/&gt; 
+    &lt;Bchild/&gt;
+    &lt;/AppConext.Provider&gt;
+)
+</code></pre>
             </div>
             <hr/>
 
@@ -998,7 +854,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://lucy-zheng123.github.io/2020/07/20/web-qian-duan-html5-ji-chu-pian/">https://lucy-zheng123.github.io/2020/07/20/web-qian-duan-html5-ji-chu-pian/</a>
+                    <a href="https://lucy-zheng123.github.io/2020/07/30/react-jin-jie-pian/">https://lucy-zheng123.github.io/2020/07/30/react-jin-jie-pian/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -1036,8 +892,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/web%E5%89%8D%E7%AB%AF/">
-                                    <span class="chip bg-color">web前端</span>
+                                <a href="/tags/React-Hooks/">
+                                    <span class="chip bg-color">React-Hooks</span>
                                 </a>
                             
                         </div>
@@ -1468,49 +1324,53 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/07/21/react-ji-chu-pian/">
+                <a href="/2020/07/30/react-jin-jie-pian/">
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn@1.1/images/lading.gif" data-original="https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn//medias/featureimages/9.jpg" class="responsive-img" alt="React-基础篇">
+                        <img src="https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn@1.1/images/lading.gif" data-original="https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn//medias/featureimages/1.jpg" class="responsive-img" alt="React-进阶篇">
                         
-                        <span class="card-title">React-基础篇</span>
+                        <span class="card-title">React-进阶篇</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            React 简介React介绍：用于构建用户界面的javascript库，主要用于构建Ui界面。
-React特点：1.声明式的设计；
-2.高效，采用虚拟DOM来实现DOM渲染，最大限度的减少DOM的操作；
-3.灵活，跟其他库可以灵活搭配使用
+                            React Hooks用法
+
+要求做一个点击加一的数
+import {useState} from ‘react’
+//useState创造一个状态，赋值一个初始值。当前初始值为0
+const [count,setCount] = useS
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-07-21
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-30
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/react/" class="post-category">
-                                    react
+                            <a href="/categories/React/" class="post-category">
+                                    React
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/React/">
-                        <span class="chip bg-color">React</span>
+                    <a href="/tags/React-Hooks/">
+                        <span class="chip bg-color">React-Hooks</span>
                     </a>
                     
                 </div>
@@ -1524,34 +1384,35 @@ React特点：1.声明式的设计；
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/07/19/zong-jie-dui-shu-zu-de-li-jie/">
+                <a href="/2020/07/27/react-xiang-mu-pian/">
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn@1.1/images/lading.gif" data-original="https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn//medias/featureimages/10.jpg" class="responsive-img" alt="数据基本类型篇">
+                        <img src="https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn@1.1/images/lading.gif" data-original="https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn//medias/featureimages/10.jpg" class="responsive-img" alt="react-项目篇">
                         
-                        <span class="card-title">数据基本类型篇</span>
+                        <span class="card-title">react-项目篇</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            JS基础篇1：数据类型数据类型在es5之前数组的类型有6种分别是 :Number,String,null,underfined,Boolean；以及复杂类型：Object；
-ES6 中新增了一种 Symbol 。这种类型的对象永不相等，即始
+                            ant 蚂蚁框架  官方文档
+安装使用：
+ cnpm install antd-mobile --save
+全部导入样式和js：
+import { Button } from 'antd-mobile';
+
+import 'antd-mob
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-19
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-27
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/javascript%E7%AF%87/" class="post-category">
-                                    javascript篇
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            小蛮牙
                             
                         </span>
                     </div>
@@ -1559,8 +1420,8 @@ ES6 中新增了一种 Symbol 。这种类型的对象永不相等，即始
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/JavaScript/">
-                        <span class="chip bg-color">JavaScript</span>
+                    <a href="/tags/react/">
+                        <span class="chip bg-color">react</span>
                     </a>
                     
                 </div>
@@ -1713,7 +1574,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">13.8k</span>&nbsp;字
+                class="white-color">22.5k</span>&nbsp;字
             
             
             

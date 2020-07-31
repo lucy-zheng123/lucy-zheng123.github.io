@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="this指向-进阶篇, 木心">
+    <meta name="keywords" content="上传到码云, 木心">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>this指向-进阶篇 | 木心</title>
+    <title>上传到码云 | 木心</title>
     <link rel="icon" type="image/jpeg" href="https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn@1.1/medias/avatar.jpg">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -606,12 +606,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn//medias/featureimages/5.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn//medias/featureimages/6.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">this指向-进阶篇</h1>
+                    <h1 class="description center-align post-title">上传到码云</h1>
                 </div>
             </div>
         </div>
@@ -732,23 +732,14 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/JavaScript%E7%AF%87/">
-                                <span class="chip bg-color">JavaScript篇</span>
+                            <a href="/tags/%E9%97%AE%E9%A2%98/">
+                                <span class="chip bg-color">问题</span>
                             </a>
                         
                     </div>
                     
                 </div>
                 <div class="col s5 right-align">
-                    
-                    <div class="post-cate">
-                        <i class="fas fa-bookmark fa-fw icon-category"></i>
-                        
-                            <a href="/categories/javascript%E7%AF%87/" class="post-category">
-                                javascript篇
-                            </a>
-                        
-                    </div>
                     
                 </div>
             </div>
@@ -757,28 +748,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-07-18
+                    2020-07-27
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-07-22
+                    2020-07-31
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    400
+                    597
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
 
@@ -793,14 +784,40 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="this关键字指向问题"><a href="#this关键字指向问题" class="headerlink" title="this关键字指向问题"></a>this关键字指向问题</h1><h2 id="this在各个场景下表示什么值"><a href="#this在各个场景下表示什么值" class="headerlink" title="this在各个场景下表示什么值"></a>this在各个场景下表示什么值</h2><ul>
-<li>1.首先是在全局环境中的this.在全局环境中。this指向window对象;如：<br><code>alert(this)  //控制台输出（object.window）</code><br><code>alert(this === window);   // true</code>  </li>
-<li>2.事件处理中的this 在事件处理函数中，this指向当前节点，就是说绑定事件的那个节点;  </li>
-<li>3  构造函数中的this 构造函数中，this指向被创建的对象<br><img src="https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn@1.1/images/lading.gif" data-original="https://i.loli.net/2020/07/18/nkVZyKPMCOYRzgm.png" alt=""><br>可以清楚发现调用者是谁this就指向谁，如果是自己调用则是参考1指向全局变量 <h2 id="改变指向问题"><a href="#改变指向问题" class="headerlink" title="改变指向问题"></a>改变指向问题</h2></li>
-<li>了解了this的基本指向我们再来看看函数对象的call()、apply() 方法(这些方法原理上是改变了this的指向对象)<br>函数作为对象提供了call()，apply() 方法，他们也可以用来调用函数，这两个方法都接受一个对象作为参数，用来指定本次调用时函数中this的指向；</li>
-</ul>
-<p>call()方法<br>call方法使用的语法规则<br>函数名称.call(obj,arg1,arg2…argN);<br>参数说明:<br>obj:函数内this要指向的对象（像上面的student我可以改成其他对象））<br>arg1,arg2…argN :参数列表，参数与参数之间使用一个逗号隔开<br><img src="https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn@1.1/images/lading.gif" data-original="https://i.loli.net/2020/07/18/wzPvl6rOsTDXnbH.png" alt=""><br>apply()方法<br>函数名称.apply(obj,[arg1,arg2…,argN])<br>参数说明:<br>obj :this要指向的对象<br>[arg1,arg2…argN] : 参数列表，要求格式为数组<br><img src="https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn@1.1/images/lading.gif" data-original="https://i.loli.net/2020/07/18/OHxXFGg8ot7sTl4.png" alt="">  </p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>1.两者所实现的功能都是改变this指向问题<br>2. 但是区别是 =&gt; call改变的是对象 =&gt; apply改变的是数组;  </p>
+                <p>首先去注册码云，然后在新建个项目</p>
+<p><img src="https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn@1.1/images/lading.gif" data-original="https://img-blog.csdn.net/20171226201506814?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZ3h4X2NzZG4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn@1.1/images/lading.gif" data-original="https://img-blog.csdn.net/20171226201542439?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZ3h4X2NzZG4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="è¿éåå¾çæè¿°"></p>
+<p>下面的钩最好勾上不然后面他会让你选择其他的</p>
+<p><strong>二、创建本地代码仓库</strong></p>
+<p>新建个文件夹然后右键打开 Git Bash here (先安装git) 然后进去后执行</p>
+<p><code>git init</code></p>
+<p>之后可以看到在该文件夹下多了一个.git文件夹，如果没看到这个文件夹这个文件默认是隐藏的需要在文件夹里面把显示隐藏文件勾上才看到</p>
+<p>三、进行代码托管<br>本地代码仓库和远程代码仓库都创建好之后，需要把它们进行同步才能在gitee上进行代码托管。</p>
+<p>1.本地代码仓库与远程代码仓库进行同步，执行代码：</p>
+<p>git <code>remote</code> add origin <a href="https://gitee.com/gxx_gitee/testGit.git" target="_blank" rel="noopener">https://gitee.com/gxx_gitee/testGit.git</a></p>
+<p>后面跟着是是在gitees上复制的下载地址</p>
+<p>如果报错了就参考这篇 <a href="https://www.jianshu.com/p/9816898c19c1" target="_blank" rel="noopener">文章 </a> 默认创建项目想要进行远程连接需要配置相对应的公钥，跟着操作就行</p>
+<p>cat ~/.ssh/id_rsa.pub</p>
+<p>然后接着下一步</p>
+<p> 输入 <code>git pull origin master</code> 命令 </p>
+<p>这步的作用是：将码云上的仓库pull到本地你新建的文件夹中</p>
+<p>输入 <code>git add .</code> </p>
+<p>（. 表示所有的）或者 git add + 文件名 （此命令可以将文件保存到缓存区） 注意：不要忘记 敲空格</p>
+<p> 输入  git commit -am “此处填写上传文件描述”  ，</p>
+<p>此命令主要是为了添加文件描述</p>
+<p>输入   ，</p>
+<p>将本地代码push到码云仓库</p>
+<p>然后就可以在你远程项目里看到文件上传成功了</p>
+<p>然后如果需要更新数据，还在原来的基础上执行后三条命名即可</p>
+<p>然后就是一些常用指令</p>
+<pre><code>git status</code></pre><p>查看是否数据发生修改，然后如果修改了数据会提示要放在栈存区内 a.txt是你新增加的数据</p>
+<pre><code>git add a.txt</code></pre><p>如果不想修改a里面的数据的了</p>
+<pre><code>git restore a.txt</code></pre><p>git diff =&gt;查看不一样的地方</p>
+<p>然后如果我们有两个文件，删除了一个你再查看状态status就会提示栈内容删除</p>
+<p>git rm b.txt  删除文件   git restore 恢复   </p>
+<p>git commit -m ‘v-1.2’ 提交信息</p>
+<p>git reflog  查看当前版本</p>
+<p>切换版本号 git reset –hard (版本号)</p>
 
             </div>
             <hr/>
@@ -826,7 +843,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://lucy-zheng123.github.io/2020/07/18/zheng-li-dui-https-xie-yi-de-li-jie/">https://lucy-zheng123.github.io/2020/07/18/zheng-li-dui-https-xie-yi-de-li-jie/</a>
+                    <a href="https://lucy-zheng123.github.io/2020/07/27/ba-ben-di-dai-ma-shang-chuan-dao-ma-yun/">https://lucy-zheng123.github.io/2020/07/27/ba-ben-di-dai-ma-shang-chuan-dao-ma-yun/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -864,8 +881,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/JavaScript%E7%AF%87/">
-                                    <span class="chip bg-color">JavaScript篇</span>
+                                <a href="/tags/%E9%97%AE%E9%A2%98/">
+                                    <span class="chip bg-color">问题</span>
                                 </a>
                             
                         </div>
@@ -1300,34 +1317,35 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/07/19/zong-jie-dui-shu-zu-de-li-jie/">
+                <a href="/2020/07/27/react-xiang-mu-pian/">
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn@1.1/images/lading.gif" data-original="https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn//medias/featureimages/10.jpg" class="responsive-img" alt="数据基本类型篇">
+                        <img src="https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn@1.1/images/lading.gif" data-original="https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn//medias/featureimages/10.jpg" class="responsive-img" alt="react-项目篇">
                         
-                        <span class="card-title">数据基本类型篇</span>
+                        <span class="card-title">react-项目篇</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            JS基础篇1：数据类型数据类型在es5之前数组的类型有6种分别是 :Number,String,null,underfined,Boolean；以及复杂类型：Object；
-ES6 中新增了一种 Symbol 。这种类型的对象永不相等，即始
+                            ant 蚂蚁框架  官方文档
+安装使用：
+ cnpm install antd-mobile --save
+全部导入样式和js：
+import { Button } from 'antd-mobile';
+
+import 'antd-mob
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-07-19
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-07-27
                         </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/javascript%E7%AF%87/" class="post-category">
-                                    javascript篇
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            小蛮牙
                             
                         </span>
                     </div>
@@ -1335,8 +1353,8 @@ ES6 中新增了一种 Symbol 。这种类型的对象永不相等，即始
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/JavaScript/">
-                        <span class="chip bg-color">JavaScript</span>
+                    <a href="/tags/react/">
+                        <span class="chip bg-color">react</span>
                     </a>
                     
                 </div>
@@ -1350,32 +1368,35 @@ ES6 中新增了一种 Symbol 。这种类型的对象永不相等，即始
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/07/17/kuai-su-da-jian-bo-ke/">
+                <a href="/2020/07/21/qi-ye-xiang-ying-shi-wang-zhan/">
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn@1.1/images/lading.gif" data-original="https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn//medias/featureimages/4.jpg" class="responsive-img" alt="搭建博客-配置篇">
+                        <img src="https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn@1.1/images/lading.gif" data-original="https://cdn.jsdelivr.net/gh/lucy-zheng123/cdn//medias/featureimages/6.png" class="responsive-img" alt="企业响应式网站">
                         
-                        <span class="card-title">搭建博客-配置篇</span>
+                        <span class="card-title">企业响应式网站</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            博客搭建hexo基本搭建
-搭建博客第一步需要安装相关的软件和搭配环境。这里就可以跟着脚本搭建脚本教程到了这里你发现最基本的hexo已经搭建好在搭建好的hexoblog下执行hexo s 可以在本地查看 hex d 在github上可以查看，
+                            企业网站基本搭建前言：这篇博文大多是代码，每个模块有各自的原生实现功能；为了体验良好请配合目录点击使用；另外把源码附上；
+发现一个有意思的企业网站就准备模仿代码来写，再做出分析问题解决
+预览地址 ：企业网站
+源码地址：我的码云
+第一步获取相
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-17
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-21
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%8D%9A%E5%AE%A2/" class="post-category">
-                                    博客
+                            <a href="/categories/%E9%A1%B9%E7%9B%AE/" class="post-category">
+                                    项目
                                 </a>
                             
                             
@@ -1385,8 +1406,8 @@ ES6 中新增了一种 Symbol 。这种类型的对象永不相等，即始
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%8D%9A%E5%AE%A2/">
-                        <span class="chip bg-color">博客</span>
+                    <a href="/tags/%E6%88%91%E7%9A%84%E9%A1%B9%E7%9B%AE/">
+                        <span class="chip bg-color">我的项目</span>
                     </a>
                     
                 </div>
